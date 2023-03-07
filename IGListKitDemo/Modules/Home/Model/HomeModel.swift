@@ -2,7 +2,7 @@
 //  HomeModel.swift
 //  IGListKitDemo
 //
-//  Created by Koo on 07/03/23.
+//  Created by Kedar-27 on 07/03/23.
 //
 
 import Foundation

@@ -17,6 +17,8 @@
 		F398366229B60F2B0060FA62 /* IGListKit in Frameworks */ = {isa = PBXBuildFile; productRef = F398366129B60F2B0060FA62 /* IGListKit */; };
 		F3A55BEC29B61C4900ADB50D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A55BEB29B61C4900ADB50D /* HomeViewModel.swift */; };
 		F3AF2C2929B770D6000CD416 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F3AF2C2829B770D6000CD416 /* README.md */; };
+		F3AF2C3229B78A83000CD416 /* KSReachabilityManager in Resources */ = {isa = PBXBuildFile; fileRef = F3AF2C3129B78A83000CD416 /* KSReachabilityManager */; };
+		F3AF2C3429B78AB7000CD416 /* KSReachabilityManager in Frameworks */ = {isa = PBXBuildFile; productRef = F3AF2C3329B78AB7000CD416 /* KSReachabilityManager */; };
 		F3D6A38429B68177006D521B /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6A38329B68177006D521B /* HomeModel.swift */; };
 		F3D6A38629B7118E006D521B /* HomeSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6A38529B7118E006D521B /* HomeSectionController.swift */; };
 		F3D6A38829B71427006D521B /* HomeListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6A38729B71427006D521B /* HomeListCVC.swift */; };
@@ -33,6 +35,7 @@
 		F3A55BE429B610CD00ADB50D /* IGListKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGListKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		F3A55BEB29B61C4900ADB50D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F3AF2C2829B770D6000CD416 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F3AF2C3129B78A83000CD416 /* KSReachabilityManager */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = KSReachabilityManager; sourceTree = "<group>"; };
 		F3D6A38329B68177006D521B /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		F3D6A38529B7118E006D521B /* HomeSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionController.swift; sourceTree = "<group>"; };
 		F3D6A38729B71427006D521B /* HomeListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCVC.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 				F36C02CF29B73845004ED283 /* KSNetworkManager in Frameworks */,
 				F398365F29B60EF60060FA62 /* EasyPeasy in Frameworks */,
 				F398366229B60F2B0060FA62 /* IGListKit in Frameworks */,
+				F3AF2C3429B78AB7000CD416 /* KSReachabilityManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,7 @@
 				F3AF2C2829B770D6000CD416 /* README.md */,
 				F398364229B608510060FA62 /* IGListKitDemo */,
 				F398364129B608510060FA62 /* Products */,
+				F3AF2C2A29B779EF000CD416 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +79,7 @@
 			children = (
 				F398365829B60DED0060FA62 /* Modules */,
 				F398365729B60A380060FA62 /* SupportingFiles */,
+				F3AF2C2D29B789BD000CD416 /* Packages */,
 			);
 			path = IGListKitDemo;
 			sourceTree = "<group>";
@@ -142,6 +148,21 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F3AF2C2A29B779EF000CD416 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3AF2C2D29B789BD000CD416 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F3AF2C3129B78A83000CD416 /* KSReachabilityManager */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 		F3D6A38029B67F97006D521B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +208,7 @@
 				F398365E29B60EF60060FA62 /* EasyPeasy */,
 				F398366129B60F2B0060FA62 /* IGListKit */,
 				F36C02CE29B73845004ED283 /* KSNetworkManager */,
+				F3AF2C3329B78AB7000CD416 /* KSReachabilityManager */,
 			);
 			productName = IGListKitDemo;
 			productReference = F398364029B608510060FA62 /* IGListKitDemo.app */;
@@ -239,6 +261,7 @@
 				F3AF2C2929B770D6000CD416 /* README.md in Resources */,
 				F398365029B608530060FA62 /* LaunchScreen.storyboard in Resources */,
 				F398364D29B608530060FA62 /* Assets.xcassets in Resources */,
+				F3AF2C3229B78A83000CD416 /* KSReachabilityManager in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +532,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F398366029B60F2B0060FA62 /* XCRemoteSwiftPackageReference "IGListKit" */;
 			productName = IGListKit;
+		};
+		F3AF2C3329B78AB7000CD416 /* KSReachabilityManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KSReachabilityManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

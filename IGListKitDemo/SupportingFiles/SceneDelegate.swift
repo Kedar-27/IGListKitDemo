@@ -2,10 +2,11 @@
 //  SceneDelegate.swift
 //  IGListKitDemo
 //
-//  Created by Koo on 06/03/23.
+//  Created by Kedar-27 on 06/03/23.
 //
 
 import UIKit
+import KSReachabilityManager
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -26,6 +27,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewModel = HomeViewModel()
         window?.rootViewController = UINavigationController(rootViewController: HomeVC(viewModel: viewModel))
         window?.makeKeyAndVisible()
+        
+        Task{
+            await KSReachabilityManager.shared.startNetworkReachabilityObserver()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
