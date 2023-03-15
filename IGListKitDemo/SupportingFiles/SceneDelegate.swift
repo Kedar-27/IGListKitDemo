@@ -7,6 +7,7 @@
 
 import UIKit
 import KSReachabilityManager
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -24,8 +25,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         UINavigationBar.appearance().titleTextAttributes = textAttributes
         
         window = UIWindow(windowScene: scene)
-        let viewModel = HomeViewModel()
-        window?.rootViewController = UINavigationController(rootViewController: HomeVC(viewModel: viewModel))
+//        let viewModel = HomeViewModel()
+//        window?.rootViewController = UINavigationController(rootViewController: HomeVC(viewModel: viewModel))
+        
+        window?.rootViewController = UIHostingController(rootView: ProfileView())
+        
         window?.makeKeyAndVisible()
         
         Task{
