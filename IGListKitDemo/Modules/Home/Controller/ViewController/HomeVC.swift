@@ -2,7 +2,7 @@
 //  HomeVC.swift
 //  IGListKitDemo
 //
-//  Created by Kedar-27 on 06/03/23.
+//  Created by Ked-27 on 06/03/23.
 //
 
 import UIKit

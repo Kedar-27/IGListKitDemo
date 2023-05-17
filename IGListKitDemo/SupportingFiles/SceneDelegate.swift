@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  IGListKitDemo
 //
-//  Created by Kedar-27 on 06/03/23.
+//  Created by Ked-27 on 06/03/23.
 //
 
 import UIKit
@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let viewModel = HomeViewModel()
 //        window?.rootViewController = UINavigationController(rootViewController: HomeVC(viewModel: viewModel))
         
-        window?.rootViewController = UIHostingController(rootView: ProfileView())
+        window?.rootViewController = UIHostingController(rootView: HomeView().environmentObject(StoryViewModel()))
         
         window?.makeKeyAndVisible()
         

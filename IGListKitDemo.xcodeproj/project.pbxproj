@@ -7,7 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F36C02CF29B73845004ED283 /* KSNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = F36C02CE29B73845004ED283 /* KSNetworkManager */; };
+		A81F05B12A11FDE60055ECEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05B02A11FDE60055ECEF /* HomeView.swift */; };
+		A81F05B32A12038F0055ECEF /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05B22A12038F0055ECEF /* StoriesView.swift */; };
+		A81F05B82A120BCD0055ECEF /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05B72A120BCD0055ECEF /* Story.swift */; };
+		A81F05BA2A120C290055ECEF /* StoryUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05B92A120C290055ECEF /* StoryUIModel.swift */; };
+		A81F05BC2A120C8F0055ECEF /* StoryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05BB2A120C8F0055ECEF /* StoryUser.swift */; };
+		A81F05BF2A120DBA0055ECEF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05BE2A120DBA0055ECEF /* Constants.swift */; };
+		A81F05C12A120DD10055ECEF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05C02A120DD10055ECEF /* Enums.swift */; };
+		A81F05C32A120E8E0055ECEF /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05C22A120E8E0055ECEF /* StoryViewModel.swift */; };
+		A81F05C72A1219120055ECEF /* StoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05C42A1219110055ECEF /* StoryDetailView.swift */; };
+		A81F05C82A1219120055ECEF /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05C52A1219110055ECEF /* UserView.swift */; };
+		A81F05C92A1219120055ECEF /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05C62A1219110055ECEF /* ProgressBarView.swift */; };
+		A81F05D62A121ADC0055ECEF /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05CE2A121ADC0055ECEF /* CacheAsyncImage.swift */; };
+		A81F05D72A121ADC0055ECEF /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05D02A121ADC0055ECEF /* VideoView.swift */; };
+		A81F05D82A121ADC0055ECEF /* VideoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05D12A121ADC0055ECEF /* VideoLoader.swift */; };
+		A81F05D92A121ADC0055ECEF /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05D32A121ADC0055ECEF /* ImageCache.swift */; };
+		A81F05DA2A121ADC0055ECEF /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05D42A121ADC0055ECEF /* ImageLoader.swift */; };
+		A81F05DB2A121ADC0055ECEF /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05D52A121ADC0055ECEF /* ImageView.swift */; };
+		A81F05E22A121B8B0055ECEF /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05DD2A121B8B0055ECEF /* Environments.swift */; };
+		A81F05E32A121B8B0055ECEF /* NSNotification-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05DF2A121B8B0055ECEF /* NSNotification-Extension.swift */; };
+		A81F05E42A121B8B0055ECEF /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05E12A121B8B0055ECEF /* CacheManager.swift */; };
+		A81F05E62A121E740055ECEF /* KSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05E52A121E740055ECEF /* KSNetworkManager.swift */; };
 		F398364429B608510060FA62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398364329B608510060FA62 /* AppDelegate.swift */; };
 		F398364629B608510060FA62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398364529B608510060FA62 /* SceneDelegate.swift */; };
 		F398364D29B608530060FA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F398364C29B608530060FA62 /* Assets.xcassets */; };
@@ -29,6 +49,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A81F05B02A11FDE60055ECEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A81F05B22A12038F0055ECEF /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		A81F05B72A120BCD0055ECEF /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		A81F05B92A120C290055ECEF /* StoryUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryUIModel.swift; sourceTree = "<group>"; };
+		A81F05BB2A120C8F0055ECEF /* StoryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryUser.swift; sourceTree = "<group>"; };
+		A81F05BE2A120DBA0055ECEF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A81F05C02A120DD10055ECEF /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		A81F05C22A120E8E0055ECEF /* StoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
+		A81F05C42A1219110055ECEF /* StoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryDetailView.swift; sourceTree = "<group>"; };
+		A81F05C52A1219110055ECEF /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		A81F05C62A1219110055ECEF /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		A81F05CE2A121ADC0055ECEF /* CacheAsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
+		A81F05D02A121ADC0055ECEF /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		A81F05D12A121ADC0055ECEF /* VideoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoLoader.swift; sourceTree = "<group>"; };
+		A81F05D32A121ADC0055ECEF /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		A81F05D42A121ADC0055ECEF /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		A81F05D52A121ADC0055ECEF /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		A81F05DD2A121B8B0055ECEF /* Environments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environments.swift; sourceTree = "<group>"; };
+		A81F05DF2A121B8B0055ECEF /* NSNotification-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification-Extension.swift"; sourceTree = "<group>"; };
+		A81F05E12A121B8B0055ECEF /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		A81F05E52A121E740055ECEF /* KSNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSNetworkManager.swift; sourceTree = "<group>"; };
 		F398364029B608510060FA62 /* IGListKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGListKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F398364329B608510060FA62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F398364529B608510060FA62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F36C02CF29B73845004ED283 /* KSNetworkManager in Frameworks */,
 				F398365F29B60EF60060FA62 /* EasyPeasy in Frameworks */,
 				F398366229B60F2B0060FA62 /* IGListKit in Frameworks */,
 				F3AF2C3429B78AB7000CD416 /* KSReachabilityManager in Frameworks */,
@@ -64,6 +104,121 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A81F05982A0ED7CB0055ECEF /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05B42A1203950055ECEF /* Model */,
+				A81F05B62A1203A10055ECEF /* View */,
+				A81F05B52A12039A0055ECEF /* ViewModel */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		A81F05B42A1203950055ECEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05B72A120BCD0055ECEF /* Story.swift */,
+				A81F05B92A120C290055ECEF /* StoryUIModel.swift */,
+				A81F05BB2A120C8F0055ECEF /* StoryUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A81F05B52A12039A0055ECEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05C22A120E8E0055ECEF /* StoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A81F05B62A1203A10055ECEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05B02A11FDE60055ECEF /* HomeView.swift */,
+				A81F05B22A12038F0055ECEF /* StoriesView.swift */,
+				A81F05C42A1219110055ECEF /* StoryDetailView.swift */,
+				A81F05C52A1219110055ECEF /* UserView.swift */,
+				A81F05C62A1219110055ECEF /* ProgressBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A81F05BD2A120DAA0055ECEF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05DC2A121B8B0055ECEF /* Environments */,
+				A81F05DE2A121B8B0055ECEF /* Extension */,
+				A81F05E02A121B8B0055ECEF /* Managers */,
+				A81F05CC2A121ADC0055ECEF /* Component */,
+				A81F05BE2A120DBA0055ECEF /* Constants.swift */,
+				A81F05C02A120DD10055ECEF /* Enums.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A81F05CC2A121ADC0055ECEF /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05CD2A121ADC0055ECEF /* CacheAsyncImage */,
+				A81F05CF2A121ADC0055ECEF /* Video */,
+				A81F05D22A121ADC0055ECEF /* Image */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		A81F05CD2A121ADC0055ECEF /* CacheAsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05CE2A121ADC0055ECEF /* CacheAsyncImage.swift */,
+			);
+			path = CacheAsyncImage;
+			sourceTree = "<group>";
+		};
+		A81F05CF2A121ADC0055ECEF /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05D02A121ADC0055ECEF /* VideoView.swift */,
+				A81F05D12A121ADC0055ECEF /* VideoLoader.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		A81F05D22A121ADC0055ECEF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05D32A121ADC0055ECEF /* ImageCache.swift */,
+				A81F05D42A121ADC0055ECEF /* ImageLoader.swift */,
+				A81F05D52A121ADC0055ECEF /* ImageView.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		A81F05DC2A121B8B0055ECEF /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05DD2A121B8B0055ECEF /* Environments.swift */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		A81F05DE2A121B8B0055ECEF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05DF2A121B8B0055ECEF /* NSNotification-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A81F05E02A121B8B0055ECEF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A81F05E12A121B8B0055ECEF /* CacheManager.swift */,
+				A81F05E52A121E740055ECEF /* KSNetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		F398363729B608510060FA62 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				F398365829B60DED0060FA62 /* Modules */,
+				A81F05BD2A120DAA0055ECEF /* Utils */,
 				F398365729B60A380060FA62 /* SupportingFiles */,
 				F3AF2C2D29B789BD000CD416 /* Packages */,
 			);
@@ -108,8 +264,9 @@
 		F398365829B60DED0060FA62 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F3AF2C3629BE5CEA000CD416 /* Profile */,
 				F398365A29B60E020060FA62 /* Home */,
+				F3AF2C3629BE5CEA000CD416 /* Profile */,
+				A81F05982A0ED7CB0055ECEF /* Stories */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -235,7 +392,6 @@
 			packageProductDependencies = (
 				F398365E29B60EF60060FA62 /* EasyPeasy */,
 				F398366129B60F2B0060FA62 /* IGListKit */,
-				F36C02CE29B73845004ED283 /* KSNetworkManager */,
 				F3AF2C3329B78AB7000CD416 /* KSReachabilityManager */,
 			);
 			productName = IGListKitDemo;
@@ -270,7 +426,6 @@
 			packageReferences = (
 				F398365D29B60EF60060FA62 /* XCRemoteSwiftPackageReference "EasyPeasy" */,
 				F398366029B60F2B0060FA62 /* XCRemoteSwiftPackageReference "IGListKit" */,
-				F36C02CD29B73845004ED283 /* XCRemoteSwiftPackageReference "KSNetworkManager" */,
 			);
 			productRefGroup = F398364129B608510060FA62 /* Products */;
 			projectDirPath = "";
@@ -301,15 +456,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3AF2C3929BE5D0E000CD416 /* ProfileView.swift in Sources */,
+				A81F05BF2A120DBA0055ECEF /* Constants.swift in Sources */,
 				F398365C29B60E2C0060FA62 /* HomeVC.swift in Sources */,
 				F3AF2C3C29BE659E000CD416 /* ScrollView+Extensions.swift in Sources */,
+				A81F05B32A12038F0055ECEF /* StoriesView.swift in Sources */,
+				A81F05DA2A121ADC0055ECEF /* ImageLoader.swift in Sources */,
+				A81F05C92A1219120055ECEF /* ProgressBarView.swift in Sources */,
+				A81F05E32A121B8B0055ECEF /* NSNotification-Extension.swift in Sources */,
+				A81F05D62A121ADC0055ECEF /* CacheAsyncImage.swift in Sources */,
 				F398364429B608510060FA62 /* AppDelegate.swift in Sources */,
+				A81F05C32A120E8E0055ECEF /* StoryViewModel.swift in Sources */,
+				A81F05E42A121B8B0055ECEF /* CacheManager.swift in Sources */,
 				F3D6A38629B7118E006D521B /* HomeSectionController.swift in Sources */,
+				A81F05E22A121B8B0055ECEF /* Environments.swift in Sources */,
 				F398364629B608510060FA62 /* SceneDelegate.swift in Sources */,
+				A81F05DB2A121ADC0055ECEF /* ImageView.swift in Sources */,
+				A81F05B82A120BCD0055ECEF /* Story.swift in Sources */,
+				A81F05D72A121ADC0055ECEF /* VideoView.swift in Sources */,
+				A81F05BA2A120C290055ECEF /* StoryUIModel.swift in Sources */,
+				A81F05D92A121ADC0055ECEF /* ImageCache.swift in Sources */,
+				A81F05E62A121E740055ECEF /* KSNetworkManager.swift in Sources */,
 				F3D6A38829B71427006D521B /* HomeListCVC.swift in Sources */,
+				A81F05BC2A120C8F0055ECEF /* StoryUser.swift in Sources */,
+				A81F05C82A1219120055ECEF /* UserView.swift in Sources */,
 				F3AF2C4029BF4F89000CD416 /* SampleVC.swift in Sources */,
 				F3D6A38429B68177006D521B /* HomeModel.swift in Sources */,
+				A81F05C72A1219120055ECEF /* StoryDetailView.swift in Sources */,
+				A81F05B12A11FDE60055ECEF /* HomeView.swift in Sources */,
 				F3A55BEC29B61C4900ADB50D /* HomeViewModel.swift in Sources */,
+				A81F05C12A120DD10055ECEF /* Enums.swift in Sources */,
+				A81F05D82A121ADC0055ECEF /* VideoLoader.swift in Sources */,
 				F3AF2C3E29BF4CB6000CD416 /* TabModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,12 +626,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQDTTASPN2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IGListKitDemo/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "IGListKit Demo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,12 +659,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQDTTASPN2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IGListKitDemo/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "IGListKit Demo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,14 +707,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F36C02CD29B73845004ED283 /* XCRemoteSwiftPackageReference "KSNetworkManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Kedar-27/KSNetworkManager";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
-			};
-		};
 		F398365D29B60EF60060FA62 /* XCRemoteSwiftPackageReference "EasyPeasy" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nakiostudio/EasyPeasy";
@@ -550,11 +726,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F36C02CE29B73845004ED283 /* KSNetworkManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F36C02CD29B73845004ED283 /* XCRemoteSwiftPackageReference "KSNetworkManager" */;
-			productName = KSNetworkManager;
-		};
 		F398365E29B60EF60060FA62 /* EasyPeasy */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F398365D29B60EF60060FA62 /* XCRemoteSwiftPackageReference "EasyPeasy" */;

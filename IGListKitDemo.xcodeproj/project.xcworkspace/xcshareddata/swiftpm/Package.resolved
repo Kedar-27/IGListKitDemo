@@ -17,15 +17,6 @@
         "branch" : "main",
         "revision" : "f8a339ce16fb81c31997fad6f8a5f3ac6b9c0b5b"
       }
-    },
-    {
-      "identity" : "ksnetworkmanager",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Kedar-27/KSNetworkManager",
-      "state" : {
-        "revision" : "f6041f65b4fec04d8d0071d343eb21270c71122e",
-        "version" : "0.0.3"
-      }
     }
   ],
   "version" : 2

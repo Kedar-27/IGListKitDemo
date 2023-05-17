@@ -207,31 +207,6 @@ struct ProfileSheetView: View {
   
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 struct FooAnchorData: Equatable {
     var anchor: Anchor<CGRect>? = nil
     static func == (lhs: FooAnchorData, rhs: FooAnchorData) -> Bool {
@@ -245,14 +220,8 @@ struct FooAnchorPreferenceKey: PreferenceKey {
         value.anchor = nextValue().anchor ?? value.anchor
     }
 }
-
-
-
-
-
-
-struct ProfileView_Previews: PreviewProvider {
-   static var previews: some View {
-        ProfileView()
-    }
-}
+//struct ProfileView_Previews: PreviewProvider {
+//   static var previews: some View {
+//        ProfileView()
+//    }
+//}

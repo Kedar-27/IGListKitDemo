@@ -16,9 +16,9 @@ class MyViewController: UIViewController {
     var enableScroll: Bool
     
     
-    let dataList = ["First Cell", "World" , "Abc" , "xyz",
-                       "qwe", "acz" , "jtyj" , "vxv",
-                       "Helegrlo", "erg" , "rtg" , "xyz",
+    let dataList = ["First Cell", "Hello" , "World" , "how",
+                       "are", "you" , "Hope" , "you",
+                       "are", "doing" , "good" , "xyz",
                        "qwe", "vsvds" , "Abgthrc" , "aaxyz",
                        "Hesdfsllo", "vssdvsdv" , "Abcsdfs" , "Last Cell"
     ]
