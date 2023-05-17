@@ -13,35 +13,42 @@ struct HomeView: View {
     @State var currentIndex = 0
     
     var body: some View {
-        NavigationView {
-            ScrollView(.horizontal,showsIndicators: false) {
-                HStack(spacing: 10) {
-                    ForEach(viewModel.stories.indices, id: \.self) { index in
-                        let story = viewModel.stories[index]
-                        Button {
-                            currentIndex = index
-                            viewModel.isStoryViewPresented = true
-                        } label: {
-                            AsyncImage(url: URL(string: story.user.image) , scale: 2) { image in
-                                image.resizable()
-                            } placeholder: {
-                                ProgressView()
+        ZStack {
+            NavigationView {
+            
+                ScrollView(.horizontal,showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        ForEach(viewModel.stories.indices, id: \.self) { index in
+                            let story = viewModel.stories[index]
+                            Button {
+                                
+                                currentIndex = index
+                                viewModel.isStoryViewPresented = true
+                            } label: {
+                                AsyncImage(url: URL(string: story.user.image) , scale: 2) { image in
+                                    image.resizable()
+                                } placeholder: {
+                                    ProgressView()
+                                }
+                                .frame(width: 80, height: 80)
+                                .aspectRatio(contentMode: .fit)
+                                .clipShape(Circle())
                             }
-                            .frame(width: 80, height: 80)
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(Circle())
                         }
                     }
+                    .padding(15)
                 }
-                .padding(15)
+                .navigationTitle("Stories")
+                .navigationBarTitleDisplayMode(.automatic)
+                
             }
             .frame(maxWidth: .infinity,maxHeight: .infinity, alignment: .top)
-            .navigationTitle("Stories")
-            .navigationBarTitleDisplayMode(.automatic)
-            .fullScreenCover(isPresented: $viewModel.isStoryViewPresented) {
+            .fullScreenCover(isPresented: $viewModel.isStoryViewPresented,
+                             sheetBGColor: .clear) {
                 StoryView(selectedIndex: currentIndex)
             }
-            
+            Color.black.opacity(viewModel.isStoryViewPresented ? 0.3 : 0)
+                .ignoresSafeArea()
         }
     }
 }

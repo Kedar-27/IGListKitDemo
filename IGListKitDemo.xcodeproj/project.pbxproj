@@ -28,6 +28,7 @@
 		A81F05E32A121B8B0055ECEF /* NSNotification-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05DF2A121B8B0055ECEF /* NSNotification-Extension.swift */; };
 		A81F05E42A121B8B0055ECEF /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05E12A121B8B0055ECEF /* CacheManager.swift */; };
 		A81F05E62A121E740055ECEF /* KSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81F05E52A121E740055ECEF /* KSNetworkManager.swift */; };
+		A896CC1B2A14C71100C97C22 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A896CC1A2A14C71100C97C22 /* View+Extension.swift */; };
 		F398364429B608510060FA62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398364329B608510060FA62 /* AppDelegate.swift */; };
 		F398364629B608510060FA62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398364529B608510060FA62 /* SceneDelegate.swift */; };
 		F398364D29B608530060FA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F398364C29B608530060FA62 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		A81F05DF2A121B8B0055ECEF /* NSNotification-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification-Extension.swift"; sourceTree = "<group>"; };
 		A81F05E12A121B8B0055ECEF /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		A81F05E52A121E740055ECEF /* KSNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSNetworkManager.swift; sourceTree = "<group>"; };
+		A896CC1A2A14C71100C97C22 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		F398364029B608510060FA62 /* IGListKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGListKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F398364329B608510060FA62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F398364529B608510060FA62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				A81F05DF2A121B8B0055ECEF /* NSNotification-Extension.swift */,
+				A896CC1A2A14C71100C97C22 /* View+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				A81F05B32A12038F0055ECEF /* StoriesView.swift in Sources */,
 				A81F05DA2A121ADC0055ECEF /* ImageLoader.swift in Sources */,
 				A81F05C92A1219120055ECEF /* ProgressBarView.swift in Sources */,
+				A896CC1B2A14C71100C97C22 /* View+Extension.swift in Sources */,
 				A81F05E32A121B8B0055ECEF /* NSNotification-Extension.swift in Sources */,
 				A81F05D62A121ADC0055ECEF /* CacheAsyncImage.swift in Sources */,
 				F398364429B608510060FA62 /* AppDelegate.swift in Sources */,

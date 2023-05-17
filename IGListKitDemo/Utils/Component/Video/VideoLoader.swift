@@ -89,7 +89,7 @@ class PlayerView: UIView {
     func restartVideo() {
         if player?.timeControlStatus == .paused {
             player?.seek(to: .zero)
-            player?.play()
+           // player?.play()
             state = .restart
         }
     }
@@ -102,7 +102,7 @@ class PlayerView: UIView {
         self.player?.addObserver(self, forKeyPath: "timeControlStatus", options: .new, context: nil)
         self.getVideoLength(videoURL: url)
         if player?.timeControlStatus != .playing {
-            self.player?.play()
+           // self.player?.play()
         }
         self.playerLayer.player = self.player
         self.playerLayer.videoGravity = .resizeAspectFill

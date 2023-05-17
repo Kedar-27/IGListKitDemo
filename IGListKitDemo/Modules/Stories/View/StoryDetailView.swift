@@ -22,20 +22,72 @@ struct StoryDetailView: View {
     @State private var state: MediaState = .notStarted
     @State private var player = AVPlayer()
     @State private var completedLongPress = false
+    
+    // Gesture Properties
+    @Binding var offset: CGSize
+    @Binding var isDragging: Bool   // Improve
     @GestureState private var isDetectingLongPress = false
-
-    var longPress: some Gesture {
-        LongPressGesture(minimumDuration: 8)
+    @GestureState private var isDetectingDragGesture = false
+    @GestureState var dragGestureActive = false
+    
+    var pressAndHoldToPauseGesture: some Gesture {
+        LongPressGesture(minimumDuration: 2)
             .updating($isDetectingLongPress) { currentState, gestureState,
                 transaction in
                 gestureState = currentState
                 transaction.animation = Animation.easeIn(duration: 2.0)
+                print("Long press updating")
             }
             .onEnded { finished in
                 self.completedLongPress = finished
+                print("long press ended")
             }
     }
-
+    
+    var swipeDownToDismissGesture: some Gesture {
+        DragGesture(minimumDistance: 0, coordinateSpace: .global)
+            .onChanged { value in
+                withAnimation {
+                    isDragging = true
+                    offset = CGSize(width: 0, height: value.translation.height)
+                }
+                
+                
+            }
+        
+            .onEnded { value in
+                withAnimation {
+                    isDragging = false
+                    offset = .zero
+                    if value.translation.height > 40 {
+                        dismiss()
+                    }
+                }
+                
+                
+            }
+            .updating($dragGestureActive) { value, state, transaction in
+                state = true
+            }
+    }
+    
+    
+    //    var swipeUpForViewsGesture: some Gesture {
+    //        DragGesture(minimumDistance: 40, coordinateSpace: .local)
+    //            .updating($isDetectingDragGesture){ currentState, gestureState,
+    //                transaction in
+    //                // Change offset as well scale
+    //
+    //                print("Drag press updating")
+    //            }.onEnded({ value in
+    //                if value.translation.height > 40 {
+    //                    dismiss()
+    //                }
+    //            })
+    //    }
+    
+    
+    
     // MARK: - Body
     
     
@@ -119,15 +171,21 @@ struct StoryDetailView: View {
         .onReceive(timer) { _ in
             startProgress()
         }
-        .gesture(DragGesture(minimumDistance: 40, coordinateSpace: .local)
-            .onEnded({ value in
-                if value.translation.height > 40 {
-                    dismiss()
-                }
-            })
-        )
-        .highPriorityGesture(longPress)
-
+        // Note:- Need to add .simultaneously to detect multiple gesture at same time.
+        .gesture(pressAndHoldToPauseGesture.simultaneously(with: swipeDownToDismissGesture))
+        .onChange(of: dragGestureActive) { newIsActiveValue in
+            if newIsActiveValue == false {
+                // Offset is reset due to issue with multifinger
+                resetOffset()
+            }
+        }
+    }
+    
+    
+    private func resetOffset() {
+        withAnimation {
+            offset = .zero
+        }
     }
     
 }
@@ -240,7 +298,9 @@ extension StoryDetailView {
     }
     
     private func dismiss() {
-        isPresented = false
+        withAnimation {
+            isPresented = false
+        }
     }
     
     private func getCurrentIndex() -> Int {
@@ -254,6 +314,6 @@ extension StoryDetailView {
     }
     
     private func playVideo() {
-        player.play()
+        //player.play()
     }
 }
